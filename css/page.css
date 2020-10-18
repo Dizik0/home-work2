@@ -1,0 +1,64 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--main-color-text-gray);
+}
+
+li{
+    list-style-type: none;
+}
+
+:root{
+    --main-color-text-gray:#757575;
+    --accent-color-blue: #2196F3; 
+    --background-color-white: #FFFFFF;
+    --secondary-color-black: #212121;
+    --bg-color-sektion: #2F303A;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-text{
+    color: var(--secondary-color-black);
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+}
+
+.logo{
+    color: var(--secondary-color-black);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+}
+
+.logo-blye{
+    color: var(--accent-color-blue);
+}
+
+.link:focus,
+.link:hover{
+    color: var(--accent-color-blue);
+}
+
+
+
+
+
+.footer{
+    background-color: var(--bg-color-sektion);
+}
+
+
+.footer .logo{
+    color: var(--background-color-white);
+}
+.map{
+    color: var(--background-color-white);
+}
