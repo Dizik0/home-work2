@@ -1,0 +1,88 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--main-color-text-gray);
+}
+li{
+    list-style-type: none;
+}
+
+:root{
+    --main-color-text-gray:#757575;
+    --accent-color-blue: #2196F3; 
+    --background-color-white: #FFFFFF;
+    --secondary-color-black: #212121;
+    --bg-color-sektion: #2F303A;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-text{
+    color: var(--secondary-color-black);
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.logo{
+    color: var(--secondary-color-black);
+    text-decoration: none;
+}
+
+.logo-blye{
+    color: var(--accent-color-blue);
+}
+
+.link:focus,
+.link:hover{
+    color: var(--accent-color-blue);
+}
+
+.hero{
+    background-color: var(--bg-color-sektion);
+}
+
+.hero-text{
+    color: var(--background-color-white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.btn{
+    background-color: var(--accent-color-blue);
+    color: var(--background-color-white);
+    width: 200px;
+    height: 50px;    
+}
+
+.btn-text{
+    font-size: 16px;
+    letter-spacing: 0.06em;
+}
+
+.ability-headlines{
+    color: var(--secondary-color-black);
+    text-transform: uppercase;
+    line-height: 0.875;
+    letter-spacing: 0.03em;  
+}
+
+.ability-text{
+    line-height: 1.71; 
+    letter-spacing: 0.03em;
+}
+
+.classes, .team{
+    color: var(--secondary-color-black);
+    font-size: 36px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+}
+
