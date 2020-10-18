@@ -38,6 +38,7 @@ li{
 }
 
 .logo{
+    font-family: Raleway;
     color: var(--secondary-color-black);
     text-decoration: none;
     font-weight: bold;
