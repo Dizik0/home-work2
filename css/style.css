@@ -13,6 +13,7 @@ li{
     --background-color-white: #FFFFFF;
     --secondary-color-black: #212121;
     --bg-color-sektion: #2F303A;
+    --bg-btn-color-white-gray: #F5F4FA;
 }
 
 .link{
@@ -109,13 +110,12 @@ li{
 }
 
 .team{
-    background: #F5F4FA;
+    background: var(--bg-btn-color-white-gray);
 }
 
 .footer{
     background-color: var(--bg-color-sektion);
 }
-
 
 .footer .logo{
     color: var(--background-color-white);
@@ -124,3 +124,6 @@ li{
     color: var(--background-color-white);
 }
 
+.contact{
+    color: rgba(255, 255, 255, 0.6);
+}

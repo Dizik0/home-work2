@@ -1,3 +1,10 @@
+@font-face{
+    font-family: 'Raleway';
+    font-weight: 'bold';
+    font-style: 700;
+    src: url();
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -14,6 +21,7 @@ li{
     --background-color-white: #FFFFFF;
     --secondary-color-black: #212121;
     --bg-color-sektion: #2F303A;
+    --bg-btn-color-white-gray: #F5F4FA;
 }
 
 .link{
@@ -47,18 +55,48 @@ li{
     color: var(--accent-color-blue);
 }
 
+.services{
+    color: var(--secondary-color-black);
+    background-color: var(--bg-btn-color-white-gray);
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
 
+.services:hover{
+    background-color: var(--accent-color-blue);
+    color: var(--background-color-white);
+}
 
+.photo{
+    border: 1px solid #EEEEEE;
+}
 
+.text-photo{
+    color: var(--secondary-color-black);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em
+}
+
+.text-photo-gray{
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
 
 .footer{
     background-color: var(--bg-color-sektion);
 }
-
 
 .footer .logo{
     color: var(--background-color-white);
 }
 .map{
     color: var(--background-color-white);
+}
+
+.contact{
+    color: rgba(255, 255, 255, 0.6);
 }
