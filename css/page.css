@@ -1,15 +1,12 @@
-html{
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
+@font-face{
+    font-family: 'Raleway';
+    font-weight: 'bold';
+    font-style: 700;
+    src: url();
 }
 
 body{
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: var(--main-color-text-gray);
 }
@@ -37,14 +34,11 @@ li{
     line-height: 1.142;
     letter-spacing: 0.02em;
     text-decoration: none;
-}
 
-.color-here{
-    color: var(--accent-color-blue);
 }
 
 .logo{
-    font-family: 'raleway', 'sans-serif';
+    font-family: Raleway;
     color: var(--secondary-color-black);
     text-decoration: none;
     font-weight: bold;
@@ -68,16 +62,6 @@ li{
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    margin-right: 8px;
-}
-
-.inline-block li{
-}
-
-.inline-block .link{
-}
-
-.inline-block-btn li{
 }
 
 .services:hover{
@@ -105,7 +89,6 @@ li{
 
 .footer{
     background-color: var(--bg-color-sektion);
-    font-style: normal;
 }
 
 .footer .logo{
