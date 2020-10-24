@@ -1,10 +1,35 @@
+html{
+    box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'sans-serif';
     font-size: 14px;
     color: var(--main-color-text-gray);
 }
+
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 li{
     list-style-type: none;
+}
+
+h1, h2, h3{
+    margin: 0;
 }
 
 :root{
@@ -15,33 +40,68 @@ li{
     --bg-color-sektion: #2F303A;
     --bg-btn-color-white-gray: #F5F4FA;
 }
-
-.link{
-    text-decoration: none;
-    color: inherit;
-}
+   
 
 
-.nav-text{
-    color: var(--secondary-color-black);
-    line-height: 1.142;
-    letter-spacing: 0.02em;
-    text-decoration: none;
 
+
+    /* header */
+
+.header .container{
+    display: flex;
 }
 
 .logo{
-    font-family: Raleway;
+    font-family: 'raleway', 'sans-serif';
     color: var(--secondary-color-black);
     text-decoration: none;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.23;
     letter-spacing: 0.03em;
+    margin-right: 100px;
 }
 
 .logo-blye{
     color: var(--accent-color-blue);
+}
+
+.color-here{
+    color: var(--accent-color-blue);
+}
+
+.menu {
+    display: inline-flex;
+    align-items: center;
+}
+
+.inline-block li{
+    display: inline-block;
+}
+
+.item-list{
+    margin-right: 50px;
+}
+
+.item-list:not(:last-child) { 
+    margin-right: 0px;
+}
+
+.header .nav-text{
+    color: var(--secondary-color-black);
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+}
+
+
+
+
+
+    /* link */
+
+.link{
+    text-decoration: none;
+    color: inherit;
 }
 
 .link:focus,
@@ -50,8 +110,35 @@ li{
 }
 
 
+
+
+
+    /* button */
+
+.btn{
+    background-color: var(--accent-color-blue);
+    color: var(--background-color-white);
+    width: 200px;
+    height: 50px;  
+    text-align: center;
+}
+
+.btn-text{
+    font-size: 16px; 
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+}
+
+
+
+
+
+    /* hero */
+
 .hero{
     background-color: var(--bg-color-sektion);
+    width: 1600px;
+    height: 600px;
 }
 
 .hero-text{
@@ -61,20 +148,18 @@ li{
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
+    
 }
 
-.btn{
-    background-color: var(--accent-color-blue);
-    color: var(--background-color-white);
-    width: 200px;
-    height: 50px;    
+.hero-box-text{
+    width: 700px;
+    height: 120px;
 }
 
-.btn-text{
-    font-size: 16px; 
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-}
+
+
+    /* внимание к деталям */
 
 .ability-headlines{
     color: var(--secondary-color-black);
@@ -89,6 +174,12 @@ li{
     line-height: 1.714; 
     letter-spacing: 0.03em;
 }
+
+
+
+
+
+    /* команда-занятия */
 
 .classes{
     color: var(--secondary-color-black);
@@ -114,15 +205,26 @@ li{
     background: var(--bg-btn-color-white-gray);
 }
 
+
+
+
+
+
+    /* подвал */
+
 .footer{
     background-color: var(--bg-color-sektion);
+    font-style: normal;
 }
-
 .footer .logo{
     color: var(--background-color-white);
 }
 .map{
     color: var(--background-color-white);
+}
+
+.footer .link{
+    margin-bottom: 9px;
 }
 
 .contact{

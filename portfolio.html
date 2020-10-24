@@ -5,36 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Портфолио</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css" integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/page.css">
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="inline-block">
       <a href="./" class="logo"><span class="logo-blye">Web</span>Studio</a>
      <ul>
         <li>
-          <a href="index.html" class="nav-text link">Студия</a>
+          <a href="./" class="nav-text link">Студия</a>
         </li>
         <li>
-          <a href="portfolio.html" class="nav-text link">Портфолио</a>
+          <a href="portfolio.html" class="nav-text link color-here">Портфолио</a>
         </li>
         <li>
           <a href="#contact" class="nav-text link">Контакты</a>
         </li>
       </ul>
     </nav>
-    <ul>
+    <ul class="inline-block">
       <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
       <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
     </ul>
   </header>
   <main>
     <nav>
-      <button type="button" class="services">Все</button>
-      <button type="button" class="services">Веб-сайты</button>
-      <button type="button" class="services">Приложения</button>
-      <button type="button" class="services">Дизайн</button>
-      <button type="button" class="services">Маркетинг</button>
+      <ul class="inline-block-btn">
+        <li><button type="button" class="services">Все</button></li>
+        <li><button type="button" class="services">Веб-сайты</button></li>
+        <li><button type="button" class="services">Приложения</button></li>
+        <li><button type="button" class="services">Дизайн</button></li>
+        <li><button type="button" class="services">Маркетинг</button></li>
+    </ul>
   </nav>
     <ul>
       <li class="photo">
