@@ -24,17 +24,19 @@ body{
     color: var(--main-color-text-gray);
 }
 
-ul{
-    margin: 0px;
-    padding: 0px;
+img{
+    display: block;
+    max-height: 100%;
+    height: auto;
 }
 
 li{
     list-style: none;
 }
 
-h1, h2, h3 {
+h1, h2, h3, ul, p{
     margin: 0px;
+    padding: 0px;
 }
 
 .container{
@@ -44,6 +46,8 @@ h1, h2, h3 {
     margin-right: auto;
     margin-left: auto;
 }
+
+
 
 
 
@@ -127,14 +131,17 @@ h1, h2, h3 {
 .hero{
     background-color: var(--bg-color-sektion);
     width: auto;
-    height: 600px;
-    padding: 200px 452px;
+    padding: 200px 0;
 }
 
 .hero-box{
-    width: 696px;
-    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 630px;
+    height: 200px;
+    text-align: center;
 }
+
 
 .hero-text{
     color: var(--background-color-white);
@@ -143,6 +150,7 @@ h1, h2, h3 {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    
 }
 
 .ability-headlines{
@@ -157,7 +165,11 @@ h1, h2, h3 {
     font-size: 14px;
     line-height: 1.714; 
     letter-spacing: 0.03em;
+    width: 270px;
+    height: 75px;
+    margin-top: 10px;
 }
+
 
 
 
@@ -174,7 +186,6 @@ h1, h2, h3 {
     font-size: 16px; 
     line-height: 1.875;
     letter-spacing: 0.06em;
-    margin-left: 170px;
     margin-top: 30px;
 } 
 
@@ -185,6 +196,7 @@ h1, h2, h3 {
 
         /* link */
 .link{
+    display: block;
     text-decoration: none;
     color: inherit;
 }
@@ -197,15 +209,22 @@ h1, h2, h3 {
             /* наши плюхи */
 
 .lesson-details{
-    padding: 94px 200px;
+    padding-bottom: 94px;
 }
 
 .ability-box{
-    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 95px;
+    flex-basis: calc(100% / 4 - 30px);
+}
+
+.ability-box:nth-child(4n + 1){
+    margin-left: 0px;
 }
 
 .ability{
     display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -216,6 +235,7 @@ h1, h2, h3 {
 
 .classes{
     color: var(--secondary-color-black);
+    text-align: center;
     font-size: 36px;
     line-height: 1.166;
     letter-spacing: 0.03em;
@@ -225,33 +245,70 @@ h1, h2, h3 {
     margin-top: 94px;
 }
 
-.photo-occupation{
-    display: inline-flex;
-    margin-right: 26px;
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.photo-occupation:last-child{
-    margin-right: 0px;
+.photo-occupation{
+    margin-top: 50px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);
 }
+
+.photo-occupation:nth-child(3n + 1){
+    margin-left: 0px;
+}
+
+
 
 
             /* team */
             
 .team{
     background: var(--bg-btn-color-white-gray);
+    padding: 94px 0;
+}
+
+.team-photo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-photo-item{
+    margin-top: 50px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+}
+
+.team-photo-item:nth-child(4n + 1){
+    margin-left: 0px;
 }
 
 .name{
+    text-align: center;
     font-size: 16px;
     line-height: 1.187;
     letter-spacing: 0.03em;
     color: var(--secondary-color-black);
 }
 
+.name-profession{
+    background-color: var(--background-color-white);
+    width: 270px;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .profession{
+    text-align: center;
     font-size: 16px;
     line-height: 1.187;
     letter-spacing: 0.03em;
+    margin-top: 10px;
 }
 
 
@@ -262,15 +319,24 @@ h1, h2, h3 {
 
 .footer{
     background-color: var(--bg-color-sektion);
+    height: 252px;
+    padding-top: 60px;
 }
 
 .footer .logo{
     color: var(--background-color-white);
 }
+
+.address{
+    margin-top: 20px;
+}
+
 .map{
+    margin-bottom: 9px;
     color: var(--background-color-white);
 }
 
 .contact{
+    margin-bottom: 9px;
     color: rgba(255, 255, 255, 0.6);
 }

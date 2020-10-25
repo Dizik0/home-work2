@@ -42,8 +42,8 @@
         <div class="container">
           <div class="hero-box">
             <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
+            <button type="button" class="btn btn-text">Заказать услугу</button>
           </div>
-          <button type="button" class="btn btn-text">Заказать услугу</button>
         </div>
       </section>
       <section class="lesson-details">
@@ -78,43 +78,53 @@
               </p>
             </li>
           </ul>
-          <h2 class="classes our-occupation">Чем мы занимаемся</h2>
-          <ul>
-            <li class="photo-occupation">
-              <img src="photo/img.jpg" alt="Програмирование" width="370" height="294"/>
-            </li>
-            <li class="photo-occupation">
-              <img src="photo/img-2.jpg" alt="Стилизация" width="370" height="294"/>
-            </li>
-            <li class="photo-occupation">
-              <img src="photo/img-3.jpg" alt="Дизайн" width="370" height="294"/>
-            </li>
-          </ul>
+          <div class="our-occupation">
+            <h2 class="classes">Чем мы занимаемся</h2>
+            <ul class="gallery">
+              <li class="photo-occupation">
+                <img src="photo/img.jpg" alt="Програмирование" width="370" height="294"/>
+              </li>
+              <li class="photo-occupation">
+                <img src="photo/img-2.jpg" alt="Стилизация" width="370" height="294"/>
+              </li>
+              <li class="photo-occupation">
+                <img src="photo/img-3.jpg" alt="Дизайн" width="370" height="294"/>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="team">
         <div class="container">
           <h2 class="classes">Наша команда</h2>
-          <ul>
-            <li>
+          <ul class="team-photo">
+            <li class="team-photo-item">
               <img src="photo/team/img-1.jpg" alt="Игорь Демьяненко" width="270" height="260"/>
-              <h3 class="name">Игорь Демьяненко</h3>
-              <p class="profession">Product Designer</p>
+              <div class="name-profession">
+                <h3 class="name">Игорь Демьяненко</h3>
+                <p class="profession">Product Designer</p>
+              </div>
             </li>
-            <li>
+            <li class="team-photo-item">
               <img src="photo/team/img-2.jpg" alt="Ольга Репина" width="270" height="260"/>
-              <h3 class="name">Ольга Репина</h3>
-              <p class="profession">Frontend Developer</p>
+              <div class="name-profession">
+                <h3 class="name">Ольга Репина</h3>
+                <p class="profession">Frontend Developer</p>
+              </div>
             </li>
-            <li>
+            <li class="team-photo-item">
               <img src="photo/team/img-3.jpg" alt="Николай Тарасов" width="270" height="260"/>
-              <h3 class="name">Николай Тарасов</h3>
-              <p class="profession">Marketing</p>
-            </li>
-            <li>
+              <div class="name-profession">
+                <h3 class="name">Николай Тарасов</h3>
+                <p class="profession">Marketing</p>
+              </div class="name-profession">
+            </li class="team-photo-item">
+            <li class="team-photo-item">
               <img src="photo/team/img-4.jpg" alt="Михаил Ермаков" width="270" height="260"/>
-              <h3 class="name">Михаил Ермаков</h3>
-              <p class="profession">UI Designer</p>
+              <div class="name-profession">
+                <h3 class="name">Михаил Ермаков</h3>
+                <p class="profession">UI Designer</p>          
+              </div>
             </li>
           </ul>
         </div>
@@ -123,7 +133,7 @@
     <footer class="footer">
       <div class="container">
         <a href="./" class="logo"><span class="logo-blye">Web</span>Studio</a>
-        <address>
+        <address class="address">
           <ul>
             <li>
               <a href="https://goo.gl/maps/VjD2412M1aLJkWsU9" class="map link">г. Киев, пр-т Леси Украинки, 26</a>
