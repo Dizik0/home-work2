@@ -278,7 +278,7 @@ h1, h2, h3, ul, p{
 .team-photo-item{
     margin-top: 50px;
     margin-left: 30px;
-    flex-basis: calc(100% / 4 - 30px);
+    flex-basis: calc(100% / 4 - 30px);  
 }
 
 .team-photo-item:nth-child(4n + 1){
